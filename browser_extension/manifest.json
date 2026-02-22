@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "OmniGuard - Proactive Phishing Defense",
+  "version": "1.0",
+  "description": "Multi-modal ML-powered phishing detection extension.",
+  "permissions": [
+    "activeTab",
+    "webRequest",
+    "storage",
+    "webNavigation"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup/popup.html"
+  }
+}

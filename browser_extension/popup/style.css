@@ -1,0 +1,43 @@
+body {
+    width: 300px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 15px;
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+}
+
+.container {
+    text-align: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin: 0 0 15px 0;
+    color: #fff;
+}
+
+.status-box {
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.status-box.safe {
+    background-color: #16213e;
+    border: 2px solid #0f3460;
+    color: #4cd137;
+}
+
+.info {
+    font-size: 12px;
+    color: #7f8fa6;
+    margin-top: 15px;
+}
