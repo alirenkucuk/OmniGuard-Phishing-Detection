@@ -36,20 +36,26 @@ OmniGuard is a proactive, end-to-end machine learning system designed to detect 
 * Google Chrome
 
 ### Step 1: Clone the Repository
-git clone https://github.com/yourusername/OmniGuard-Phishing-Detection.git
+```
+git clone https://github.com/alirenkucuk/OmniGuard-Phishing-Detection.git
 cd OmniGuard-Phishing-Detection
+```
 
 ### Step 2: Install Dependencies
+```
 pip install -r requirements.txt
 playwright install chromium
-
+```
 ### Step 3: Compile the C++ Engine
+```
 cd cpp_engine
 python setup.py build_ext --inplace
-
+```
 ### Step 4: Start the Inference Server
+```
 cd ../backend
 uvicorn app:app --reload
+```
 
 ### Step 5: Load the Chrome Extension
 1. Open Google Chrome and navigate to `chrome://extensions/`
@@ -59,7 +65,3 @@ uvicorn app:app --reload
 ## Usage
 
 With the FastAPI server running and the extension loaded, simply browse the web. The extension will silently analyze incoming URLs. If a phishing threat is detected, the inference engine will flag it with a 200 OK status in the terminal, and the extension will log the threat.
-
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
